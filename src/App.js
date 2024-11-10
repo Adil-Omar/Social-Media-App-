@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react'
+import Routing from './routing/Routing'
+import { useDispatch } from 'react-redux'
+import { getCurrentUser } from './store/slices/authSlice'
 
-function App() {
+
+export default function App() {
+
+  const [loading, setLoading] = useState(false)
+
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    dispatch(getCurrentUser(setLoading))
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {loading ? <h1>Loading ... </h1> : <Routing />}
     </div>
-  );
+  )
 }
-
-export default App;

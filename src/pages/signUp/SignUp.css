@@ -1,0 +1,102 @@
+/* Container styling */
+.signup-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signup-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Input fields styling */
+  .signup-container input[type="text"],
+  .signup-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .signup-container input[type="text"]:focus,
+  .signup-container input[type="password"]:focus {
+    border-color: #1877f2;
+  }
+  
+  /* Radio button container styling */
+  .gender-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* File input styling - placed on a new line */
+  .file-upload-container {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .file-upload-container label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .signup-container input[type="file"] {
+    padding: 5px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Buttons styling */
+  .signup-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    background-color: #1877f2;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .signup-container button:hover {
+    background-color: #145db2;
+  }
+  
+  .login-btn {
+    background-color: #42b72a;
+    margin-top: 10px;
+  }
+  
+  .login-btn:hover {
+    background-color: #36a420;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    .signup-container {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  

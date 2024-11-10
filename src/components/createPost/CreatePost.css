@@ -1,0 +1,37 @@
+.create-post {
+    margin-bottom: 20px;
+  }
+  
+  .create-post__error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .create-post__input,
+  .create-post__textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .create-post__textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  .create-post__button {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .create-post__button:hover {
+    background-color: #36a420;
+  }
+  
